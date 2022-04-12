@@ -6,6 +6,10 @@
 $color-default-black:               #000000;
 $color-default-white:               #ffffff;
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-alice-blue:                  #f2f5f7;
+$color-black-pearl:                 #041827;
+$color-deep-sky-blue:               #00b2ff;
+$color-whisper:                     #ebebeb;
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
@@ -27,7 +31,8 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-placeholder:                    "PT Mono", "Courier New", monospace;
+$extended-ff-placeholder:           "Roboto Condensed", "Arial", sans-serif;;
 
 // Animation
 // ---------------------------------
