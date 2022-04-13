@@ -2,6 +2,12 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+
+  &--footer {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .contacts__list-item {
@@ -13,6 +19,19 @@
   @include vp-1023 {
     &:not(:last-child) {
       margin-right: 40px;
+    }
+  }
+
+  &--footer {
+    &:not(:last-child) {
+      margin-bottom: 7px;
+      margin-right: 0;
+    }
+
+    @include vp-1023 {
+      &:not(:last-child) {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -30,4 +49,8 @@
   font-size: 16px;
   line-height: 30px;
   color: $color-alice-blue;
+
+  &--footer {
+    line-height: 23px;
+  }
 }
