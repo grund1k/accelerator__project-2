@@ -39,4 +39,25 @@
     letter-spacing: 0.05em;
     text-transform: uppercase;
   }
+
+  &--deep-sky-blue {
+    border: none;
+    background-color: $color-deep-sky-blue;
+  }
+
+  &--intro {
+    max-width: 410px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 17px 20px;
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 12px 20px;
+    }
+  }
 }

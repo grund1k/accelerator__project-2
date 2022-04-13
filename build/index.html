@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
+    <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -15,40 +15,55 @@
   <body>
     <div class="wrapper">
       <header class="header">
-        <div class="container header__wrapper">
-          <div class="header__logo logo">
-            <svg class="logo__image" width="55" height="55">
-              <use xlink:href="img/sprite_auto.svg#logo"></use>
-            </svg>
-            <div class="logo__text-wrapper">
-              <p class="logo__title">Smart Device</p>
-              <p class="logo__subtitle">умные технологии</p>
+        <div class="header__gradient-wrapper">
+          <div class="container header__wrapper">
+            <div class="header__logo logo">
+              <svg class="logo__image" width="55" height="55">
+                <use xlink:href="img/sprite_auto.svg#logo"></use>
+              </svg>
+              <div class="logo__text-wrapper">
+                <p class="logo__title">Smart Device</p>
+                <p class="logo__subtitle">умные технологии</p>
+              </div>
             </div>
+
+            <ul class="header__contacts contacts">
+              <li class="contacts__list-item">
+                <a class="contacts__link" href="mailto:info@sd.ru">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#email"></use>
+                  </svg>
+                  <span>info@sd.ru</span>
+                </a>
+              </li>
+              <li class="contacts__list-item">
+                <a class="contacts__link" href="tel:+74950005252">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite_auto.svg#phone-call"></use>
+                  </svg>
+                  <span>+7 (495) 000 52 52</span>
+                </a>
+              </li>
+            </ul>
+
+            <button class="header__btn btn btn--header">Заказать звонок</button>
           </div>
-
-          <ul class="header__contacts contacts">
-            <li class="contacts__list-item">
-              <a class="contacts__link" href="mailto:info@sd.ru">
-                <svg width="20" height="20">
-                  <use xlink:href="img/sprite_auto.svg#email"></use>
-                </svg>
-                <span>info@sd.ru</span>
-              </a>
-            </li>
-            <li class="contacts__list-item">
-              <a class="contacts__link" href="tel:+74950005252">
-                <svg width="20" height="20">
-                  <use xlink:href="img/sprite_auto.svg#phone-call"></use>
-                </svg>
-                <span>+7 (495) 000 52 52</span>
-              </a>
-            </li>
-          </ul>
-
-          <button class="header__btn btn btn--header">Заказать звонок</button>
         </div>
       </header>
       <main>
+        <section class="intro">
+          <div class="container">
+            <div class="intro__wrapper">
+              <h1 class="visually-hidden">Smart Device сервис по производству печатных плат</h1>
+              <h2>Печатные платы</h2>
+              <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+              <a class="intro__btn btn btn--deep-sky-blue btn--intro" href="">
+                <span class="intro__btn-full-text">Получить бесплатную консультацию</span>
+                <span class="intro__btn-short-text">бесплатная консультация</span>
+              </a> <!--Якорь до блока-->
+            </div>
+          </div>
+        </section>
         <section class="features">
           <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
