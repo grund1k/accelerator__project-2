@@ -1,0 +1,33 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.contacts__list-item {
+
+  &:not(:last-child) {
+    margin-right: 122px;
+  }
+
+  @include vp-1023 {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.contacts span {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  line-height: 30px;
+  color: $color-alice-blue;
+}

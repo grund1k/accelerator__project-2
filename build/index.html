@@ -10,11 +10,43 @@
     <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="container header__wrapper">
+          <div class="header__logo logo">
+            <svg class="logo__image" width="55" height="55">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+            <div class="logo__text-wrapper">
+              <p class="logo__title">Smart Device</p>
+              <p class="logo__subtitle">умные технологии</p>
+            </div>
+          </div>
+
+          <ul class="header__contacts contacts">
+            <li class="contacts__list-item">
+              <a class="contacts__link" href="mailto:info@sd.ru">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#email"></use>
+                </svg>
+                <span>info@sd.ru</span>
+              </a>
+            </li>
+            <li class="contacts__list-item">
+              <a class="contacts__link" href="tel:+74950005252">
+                <svg width="20" height="20">
+                  <use xlink:href="img/sprite_auto.svg#phone-call"></use>
+                </svg>
+                <span>+7 (495) 000 52 52</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="header__btn btn btn--header">Заказать звонок</button>
+        </div>
       </header>
       <main>
         <section class="features">

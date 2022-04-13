@@ -30,3 +30,14 @@
     url("../fonts/PTMono-Regular.woff2") format("woff2"),
     url("../fonts/PTMono-Regular.woff") format("woff");
 }
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Roboto";
+
+  font-display: swap;
+  src:
+    url("../fonts/Roboto-Medium.woff2") format("woff2"),
+    url("../fonts/Roboto-Medium.woff") format("woff");
+}

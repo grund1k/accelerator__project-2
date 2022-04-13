@@ -1,12 +1,16 @@
 .btn {
-  display: inline-flex;
-  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
   padding: 10px 20px;
 
-  color: $color-default-white;
+  font-family: $extended-ff-placeholder;
+  color: $color-alice-blue;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: transparent;
+  border: 1px solid $color-alice-blue;
+  border-radius: 3px;
   cursor: pointer;
 
   transition: opacity $trans-default;
@@ -26,5 +30,13 @@
     &:focus {
       opacity: 0.8;
     }
+  }
+
+  &--header {
+    padding: 11px 16px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
 }
