@@ -1,20 +1,20 @@
-const accordions = document.querySelectorAll('.footer__accordion');
-const accordionButtons = document.querySelectorAll('.footer__accordion-button');
+const accordions = document.querySelectorAll('.accordion');
+const accordionButtons = document.querySelectorAll('.accordion__button');
 
 if (accordions) {
   accordions.forEach((element) => {
-    element.classList.remove('footer__accordion--open');
-    element.classList.add('footer__accordion--closed');
+    element.classList.remove('accordion--open');
+    element.classList.add('accordion--closed');
   });
 }
 
 const switchAccordion = (accordion) => {
-  if (accordion.classList.contains('footer__accordion--open')) {
-    accordion.classList.remove('footer__accordion--open');
-    accordion.classList.add('footer__accordion--closed');
-  } else if (accordion.classList.contains('footer__accordion--closed')) {
-    accordion.classList.remove('footer__accordion--closed');
-    accordion.classList.add('footer__accordion--open');
+  if (accordion.classList.contains('accordion--open')) {
+    accordion.classList.remove('accordion--open');
+    accordion.classList.add('accordion--closed');
+  } else if (accordion.classList.contains('accordion--closed')) {
+    accordion.classList.remove('accordion--closed');
+    accordion.classList.add('accordion--open');
   }
 };
 

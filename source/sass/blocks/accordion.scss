@@ -1,0 +1,43 @@
+.accordion {
+  &--open .accordion__element {
+    display: block;
+  }
+
+  &--closed .accordion__element {
+    display: none;
+  }
+
+  &--closed .accordion__element--footer {
+    display: block;
+  }
+
+  &--open .description__text {
+    max-height: none;
+  }
+
+  @include vp-1023 {
+    &--closed .accordion__element--footer {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    &--open .description__text {
+      max-height: none;
+    }
+  }
+}
+
+.accordion__button {
+  &--footer {
+    display: none;
+  }
+
+  @include vp-767 {
+    &--footer {
+      display: block;
+    }
+  }
+}
+
+

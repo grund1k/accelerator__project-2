@@ -1,0 +1,84 @@
+.description {
+  padding-top: 31px;
+  padding-bottom: 98px;
+
+  @include vp-1023 {
+    padding-top: 9px;
+    padding-bottom: 77px;
+  }
+}
+
+.description__wrapper {
+  position: relative;
+  display: flex;
+  gap: 100px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 320px;
+    background-image: url("../img/2022.png");
+    flex-shrink: 0;
+  }
+
+  @include vp-1023 {
+    gap: 30px;
+
+    &::before {
+      margin-left: -5px;
+      margin-top: 5px;
+    }
+  }
+
+  @include vp-767 {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.description__text-wrapper h2 {
+  font-family: $extended-ff-placeholder;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-black-pearl;
+  margin: 0 0 12px 0;
+
+  @include vp-767 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.description__text-wrapper p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-black-pearl;
+  margin: 0 0 20px 0;
+
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.description__text {
+  @include vp-767 {
+    max-height: 207px;
+    overflow: hidden;
+  }
+}
+
+.description__btn {
+  margin-top: 40px;
+
+  @include vp-1023 {
+    margin-top: 0;
+  }
+
+  @include vp-767 {
+    margin-top: 15px;
+  }
+}

@@ -26,10 +26,12 @@
 @import "blocks/intro";
 @import "blocks/features";
 @import "blocks/features-list";
+@import "blocks/description";
 @import "blocks/goods-list";
 @import "blocks/social-list";
 @import "blocks/footer";
 @import "blocks/nav";
+@import "blocks/accordion.scss";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg

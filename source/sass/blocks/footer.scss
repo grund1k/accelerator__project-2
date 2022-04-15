@@ -84,22 +84,3 @@
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
-
-.footer__accordion {
-  @include vp-767 {
-    &--open .footer__accordion-element {
-      display: block;
-    }
-    &--closed .footer__accordion-element {
-      display: none;
-    }
-  }
-}
-
-.footer__accordion-button {
-  display: none;
-
-  @include vp-767 {
-    display: block;
-  }
-}
