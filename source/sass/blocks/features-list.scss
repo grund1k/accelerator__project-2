@@ -5,6 +5,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @include vp-767 {
+    justify-content: center;
+  }
 }
 
 .features-list__item {
