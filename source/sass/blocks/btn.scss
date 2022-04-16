@@ -77,4 +77,24 @@
       min-width: 160px;
     }
   }
+
+  &--submit {
+    background-color: $color-black-pearl;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    min-height: 45px;
+  }
+
+  &--medium-width {
+    max-width: 265px;
+
+    @include vp-767 {
+      max-width: unset;
+    }
+  }
 }

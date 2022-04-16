@@ -57,10 +57,10 @@
               <h1 class="visually-hidden">Smart Device сервис по производству печатных плат</h1>
               <h2>Печатные платы</h2>
               <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a class="intro__btn btn btn--deep-sky-blue btn--intro" href="">
+              <a class="intro__btn btn btn--deep-sky-blue btn--intro" href="#form-section">
                 <span class="intro__btn-full-text">Получить бесплатную консультацию</span>
                 <span class="intro__btn-short-text">бесплатная консультация</span>
-              </a> <!--Якорь до блока-->
+              </a>
             </div>
           </div>
         </section>
@@ -157,6 +157,35 @@
                 </a>
               </li>
             </ul>
+          </div>
+        </section>
+        <section class="form-section" id="form-section">
+          <div class="container">
+            <div class="form-section__wrapper form">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <form id="index__form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="form__wrapper">
+                  <div class="form__input">
+                    <input type="text" name="user_name" id="user_name" placeholder="Имя" required>
+                    <label class="visually-hidden" for="user_name">Введите свое имя</label>
+                  </div>
+                  <div class="form__input">
+                    <input type="tel" name="user__telephone" id="user__telephone" placeholder="Телефон" required>
+                    <label class="visually-hidden" for="user__telephone">Введите свой телефон</label>
+                  </div>
+                  <div class="form__textarea form__textarea--full-columns">
+                    <textarea name="user__question" id="user__question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                    <label class="visually-hidden" for="user__question">Введите ваш впорос</label>
+                  </div>
+                  <button class="form__submit btn btn--submit btn--medium-width" type="submit">Задать вопрос</button>
+                  <div class="form__checkbox">
+                    <input type="checkbox" name="user__agree" id="user__agree" required>
+                    <label for="user__agree">Я согласен на обработку  персональных данных</label>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </section>
       </main>

@@ -1,0 +1,52 @@
+.form-section {
+  background-color: $color-deep-sky-blue;
+  position: relative;
+  padding-top: 166px;
+  padding-bottom: 249px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 840px 975px 0 0;
+    border-color: $color-black-pearl-transparent transparent transparent transparent;
+    top: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 37%;
+    left: 18%;
+    width: 518px;
+    height: 285px;
+    background-image: url(../img/paper_airplane.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @include vp-1023 {
+    padding-top: 42px;
+    padding-bottom: 124px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    padding-top: 49px;
+    padding-bottom: 91px;
+  }
+}
+
+.form-section__wrapper {
+  max-width: 596px;
+  margin-left: auto;
+
+  @include vp-1023 {
+    margin-left: 0;
+    max-width: unset;
+  }
+}
