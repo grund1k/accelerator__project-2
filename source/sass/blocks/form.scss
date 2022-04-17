@@ -47,6 +47,7 @@
   border-radius: 3px;
   padding-left: 15px;
   padding-right: 15px;
+  color: $color-default-white;
 
   &::placeholder {
     color: $color-default-white;
@@ -123,10 +124,6 @@
     margin-top: 2px;
     margin-left: 5px;
   }
-}
-
-.form__checkbox input {
-  display: none;
 }
 
 .form__checkbox label {

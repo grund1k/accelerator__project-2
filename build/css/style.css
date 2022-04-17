@@ -1291,6 +1291,7 @@ button,
   border-radius: 3px;
   padding-left: 15px;
   padding-right: 15px;
+  color: #ffffff;
 }
 
 .form__input input::-webkit-input-placeholder,
@@ -1355,10 +1356,6 @@ button,
 .form__checkbox {
   margin-top: 20px;
   margin-left: 10px;
-}
-
-.form__checkbox input {
-  display: none;
 }
 
 .form__checkbox label {

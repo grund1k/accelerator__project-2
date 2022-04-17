@@ -164,14 +164,14 @@
             <div class="form-section__wrapper form">
               <h2>Остались вопросы? Задайте их нам!</h2>
               <p>Мы проконсультируем Вас бесплатно</p>
-              <form id="index__form" action="https://echo.htmlacademy.ru" method="post">
+              <form id="index__form" action="https://echo.htmlacademy.ru" method="post" data-form>
                 <div class="form__wrapper">
                   <div class="form__input">
-                    <input type="text" name="user_name" id="user_name" placeholder="Имя" required>
+                    <input type="text" name="user_name" id="user_name" placeholder="Имя" required data-username-input>
                     <label class="visually-hidden" for="user_name">Введите свое имя</label>
                   </div>
                   <div class="form__input">
-                    <input type="tel" name="user__telephone" id="user__telephone" placeholder="Телефон" required>
+                    <input type="tel" name="user__telephone" id="user__telephone" placeholder="Телефон" required maxlength="16" data-tel-input>
                     <label class="visually-hidden" for="user__telephone">Введите свой телефон</label>
                   </div>
                   <div class="form__textarea form__textarea--full-columns">
@@ -180,8 +180,8 @@
                   </div>
                   <button class="form__submit btn btn--submit btn--medium-width" type="submit">Задать вопрос</button>
                   <div class="form__checkbox">
-                    <input type="checkbox" name="user__agree" id="user__agree" required>
-                    <label for="user__agree">Я согласен на обработку  персональных данных</label>
+                    <input class="visually-hidden" type="checkbox" name="user__agree" id="user__agree" data-checkbox-input required>
+                    <label for="user__agree" tabindex="0">Я согласен на обработку  персональных данных</label>
                   </div>
                 </div>
               </form>
