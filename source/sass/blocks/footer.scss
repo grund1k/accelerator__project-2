@@ -117,5 +117,7 @@
 }
 
 .footer__underline {
-  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  @include vp-767 {
+    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+  }
 }
