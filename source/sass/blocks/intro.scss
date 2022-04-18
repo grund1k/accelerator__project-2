@@ -8,12 +8,13 @@
   @include vp-1023 {
     padding-top: 179px;
     padding-bottom: 205px;
+    background-position: center,-122px;
   }
 
   @include vp-767 {
     padding-top: 150px;
     padding-bottom: 190px;
-    background-position: center, -122px;
+    background-position: center,-232px;
   }
 }
 

@@ -121,7 +121,7 @@
                   <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
                 </div>
 
-                <button class="description__btn btn btn--description accordion__button">Подробнее</button>
+                <button class="description__btn btn btn--description accordion__button accordion__button--text accordion__button--closed">Подробнее</button>
               </div>
             </div>
         </section>
@@ -231,9 +231,9 @@
             </ul>
           </div>
 
-          <nav class="footer__nav footer__underline accordion accordion--open">
+          <nav class="footer__nav footer__underline footer__accordion accordion accordion--open">
             <h2>Разделы сайта</h2>
-            <button class="accordion__button accordion__button--footer"><span>Открыть раздел</span></button>
+            <button class="accordion__button accordion__button--closed accordion__button--footer"><span class="visually-hidden">Открыть раздел</span></button>
             <ul class="accordion__element accordion__element--footer nav">
               <li class="nav__item">
                 <a class="nav__link" href="#">О Компаниии</a>
@@ -259,12 +259,12 @@
             </ul>
           </nav>
 
-          <div class="footer__contacts footer__underline accordion accordion--open">
+          <div class="footer__contacts footer__underline footer__accordion accordion accordion--open">
             <h2>Наш офис</h2>
-            <button class="accordion__button accordion__button--footer"><span>Открыть раздел</span></button>
+            <button class="accordion__button accordion__button--closed accordion__button--footer"><span class="visually-hidden">Открыть раздел</span></button>
             <ul class="accordion__element accordion__element--footer contacts contacts--footer">
               <li class="contacts__list-item contacts__list-item--footer">
-                <a class="contacts__link contacts__link--footer" href="https://yandex.ru/maps/-/CCUFEWe-WD">г. Мытищи, Олимпийский проспект, д.10</a>
+                <a class="contacts__link contacts__link--footer" href="https://yandex.ru/maps/-/CCUFEWe-WD">г. Мытищи, Олимпийский&nbsp;проспект, д.10</a>
               </li>
               <li class="contacts__list-item contacts__list-item--footer">
                 <a class="contacts__link contacts__link--footer" href="tel:+74955894050">+7 (495) 589-40-50</a>
@@ -317,19 +317,6 @@
           </button>
         </div>
       </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
       </div>
     </div>
 

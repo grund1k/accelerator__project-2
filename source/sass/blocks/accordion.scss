@@ -8,7 +8,7 @@
   }
 
   &--closed .accordion__element--footer {
-    display: block;
+    display: flex;
   }
 
   &--open .description__text {
@@ -34,6 +34,23 @@
   @include vp-767 {
     &--footer {
       display: block;
+      border: none;
+      width: 15px;
+      height: 15px;
+      padding: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: transparent;
+      margin-right: 25px;
+      margin-top: -3px;
+    }
+
+    &--closed {
+      background-image: url("../img/svg/accordion-open.svg");
+    }
+
+    &--open {
+      background-image: url("../img/svg/accordion-close.svg");
     }
   }
 }

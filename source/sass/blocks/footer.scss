@@ -2,6 +2,10 @@
   background-color: $color-black-pearl;
   padding-top: 50px;
   padding-bottom: 46px;
+
+  @include vp-767 {
+    padding-top: 34px;
+  }
 }
 
 .footer__wrapper {
@@ -9,7 +13,6 @@
   grid-template-columns: max-content 1fr 1fr;
   max-width: 1222px;
   margin: 0 auto;
-  padding: 0 10px;
 
   @include vp-1023 {
     grid-template-columns: 1fr 1fr;
@@ -39,8 +42,12 @@
   margin-bottom: 30px;
   margin-right: 172px;
 
+  @include vp-1023 {
+    margin-right: auto;
+  }
+
   @include vp-767 {
-    margin-right: 0;
+    margin-right: 17px;
     margin-bottom: 15px;
   }
 }
@@ -53,6 +60,11 @@
     margin-right: -5px;
     margin-top: 5px;
   }
+
+  @include vp-767 {
+    margin-top: 0;
+    margin-bottom: 18px;
+  }
 }
 
 .footer h2 {
@@ -64,6 +76,10 @@
   text-transform: uppercase;
   color: $color-default-white;
   margin: 0 0 20px 0;
+
+  @include vp-767 {
+    margin: 0 0 17px 24px;
+  }
 }
 
 .footer__nav {
@@ -77,10 +93,29 @@
 
 .footer__contacts {
   margin-top: 8px;
+  justify-self: end;
+
+  @include vp-1023 {
+    margin-left: 15px;
+  }
+
+  @include vp-767 {
+    justify-self: unset;
+    margin-left: 0;
+  }
+}
+
+.footer__accordion {
+  @include vp-767 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 24px;
+  }
 }
 
 .footer__underline {
-  @include vp-767 {
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
-  }
+  border-bottom: 1px solid rgba(248, 253, 255, 0.7);
 }
