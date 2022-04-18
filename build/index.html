@@ -46,7 +46,7 @@
               </li>
             </ul>
 
-            <button class="header__btn btn btn--header">Заказать звонок</button>
+            <button class="header__btn btn btn--header" data-open-modal="order-call">Заказать звонок</button>
           </div>
         </div>
       </header>
@@ -282,13 +282,36 @@
     </div>
 
     <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal modal--preload" data-modal="order-call">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
+          <div class="modal__form-wrapper form form--modal form--start-focus">
+            <h2>Закажите звонок</h2>
+            <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+            <form id="call__form" action="https://echo.htmlacademy.ru" method="post" data-form>
+              <div class="form__wrapper form__wrapper--modal">
+                <div class="form__input form__input--modal">
+                  <input type="text" name="user_name" id="user_name_call" placeholder="Имя" required data-username-input data-focus>
+                  <label class="visually-hidden" for="user_name_call">Введите свое имя</label>
+                </div>
+                <div class="form__input form__input--modal">
+                  <input type="tel" name="user__telephone" id="user__telephone_call" placeholder="Телефон" required maxlength="16" data-tel-input>
+                  <label class="visually-hidden" for="user__telephone_call">Введите свой телефон</label>
+                </div>
+                <div class="form__textarea form__textarea--full-columns">
+                  <textarea name="user__question" id="user__question_call" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                  <label class="visually-hidden" for="user__question_call">Введите ваш впорос</label>
+                </div>
+                <button class="form__submit form__submit--modal btn btn--submit btn--full-width" type="submit">Отправить</button>
+                <div class="form__checkbox form__checkbox--modal">
+                  <input class="visually-hidden" type="checkbox" name="user__agree" id="user__agree_call" data-checkbox-input required>
+                  <label for="user__agree_call" tabindex="0">Я согласен на обработку  персональных данных</label>
+                </div>
+              </div>
+            </form>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
+            <svg width="20" height="20">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
           </button>

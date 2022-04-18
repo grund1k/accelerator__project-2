@@ -22,6 +22,15 @@ if (accordionButtons) {
   accordionButtons.forEach((button) => {
     button.addEventListener('click', () => {
       switchAccordion(button.parentElement);
+
+      if (accordions) {
+        accordions.forEach((element) => {
+          if (element !== button.parentElement) {
+            element.classList.remove('accordion--open');
+            element.classList.add('accordion--closed');
+          }
+        });
+      }
     });
   });
 }

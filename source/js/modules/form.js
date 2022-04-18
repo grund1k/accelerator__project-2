@@ -57,7 +57,7 @@ const addValidationListeners = () => {
 
 const showLoadAlert = (message) => {
   const alertContainer = document.createElement('div');
-  alertContainer.style.zIndex = 100;
+  alertContainer.style.zIndex = 10000;
   alertContainer.style.position = 'fixed';
   alertContainer.style.left = 0;
   alertContainer.style.top = 0;
@@ -79,7 +79,6 @@ const showLoadAlert = (message) => {
 
 
 for (let form of forms) {
-  addValidationListeners();
 
   form.addEventListener('submit', (evt) => {
     evt.preventDefault();

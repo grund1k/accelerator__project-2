@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import './modules/accordion';
 import './modules/telephone-mask';
 import './modules/form';
-// import {addValidationListeners} from './modules/form';
+import {addValidationListeners} from './modules/form';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
-  // addValidationListeners();
+  addValidationListeners();
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

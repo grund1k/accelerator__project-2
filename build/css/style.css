@@ -722,6 +722,10 @@ button,
   max-width: 265px;
 }
 
+.btn--full-width {
+  width: 100%;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -768,11 +772,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 100%;
-  min-height: 100%;
   padding: 60px 40px;
 }
 
@@ -787,15 +787,18 @@ button,
 
 .modal__content {
   position: relative;
-  width: 600px;
+  width: 500px;
   padding: 40px;
-  background-color: #ffffff;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  top: 84px;
+  left: -8px;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 19px;
+  right: 15px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -867,7 +870,7 @@ button,
   -ms-flex-item-align: start;
   -ms-grid-row-align: start;
   align-self: start;
-  margin-right: 43px;
+  margin-right: 62px;
   margin-top: 5px;
 }
 
@@ -1278,6 +1281,16 @@ button,
   margin: 0 0 35px 5px;
 }
 
+.form--modal h2 {
+  font-size: 30px;
+  line-height: 42px;
+  margin-bottom: 4px;
+}
+
+.form--modal p {
+  margin: 0 0 39px 0;
+}
+
 .form__input input,
 .form__textarea textarea {
   font-family: 'PT Mono';
@@ -1319,10 +1332,19 @@ button,
   color: #ffffff;
 }
 
+.form__input input:focus,
+.form__textarea textarea:focus {
+  outline: 1px solid red;
+}
+
 .form__input input {
   min-height: 50px;
   max-width: 275px;
   overflow: auto;
+}
+
+.form__input--modal input {
+  max-width: unset;
 }
 
 .form__textarea textarea {
@@ -1345,6 +1367,12 @@ button,
   margin-left: 5px;
 }
 
+.form__wrapper--modal {
+  margin-left: 0;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
 .form__textarea--full-columns {
   grid-column: 1 / -1;
 }
@@ -1353,9 +1381,18 @@ button,
   margin-top: 8px;
 }
 
+.form__submit--modal {
+  margin-top: -4px;
+}
+
 .form__checkbox {
   margin-top: 20px;
   margin-left: 10px;
+}
+
+.form__checkbox--modal {
+  margin-top: 0;
+  margin-left: 8px;
 }
 
 .form__checkbox label {
