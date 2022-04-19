@@ -2,8 +2,13 @@
   background-image: $intro-gradient, url("../img/top-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: $color-black-pearl;
   padding-top: 304px;
   padding-bottom: 280px;
+
+  @include retina {
+    background-image: url("../img/top-bg@2x.jpg");
+  }
 
   @include vp-1023 {
     padding-top: 179px;

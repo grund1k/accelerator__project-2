@@ -20,9 +20,13 @@
     left: 18%;
     width: 518px;
     height: 285px;
-    background-image: url(../img/paper_airplane.png);
+    background-image: url("../img/paper_airplane.png");
     background-repeat: no-repeat;
     background-position: center;
+
+    @include retina {
+      background-image: url("../img/paper_airplane@2x.png");
+    }
   }
 
   @include vp-1023 {

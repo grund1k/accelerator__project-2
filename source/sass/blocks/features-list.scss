@@ -1,13 +1,19 @@
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
 
+  @include vp-1023 {
+    column-gap: 27px;
+  }
+
   @include vp-767 {
     justify-content: center;
+    justify-items: center;
+    grid-template-columns: 1fr;
   }
 }
 

@@ -63,8 +63,9 @@
     color: $color-default-white;
   }
 
-  &:focus {
-    outline: 1px solid red;
+  &:focus,
+  &:hover {
+    outline: 1px solid $color-black-pearl;
   }
 }
 
@@ -159,6 +160,7 @@
 }
 
 .form__checkbox label {
+  cursor: pointer;
   font-size: 14px;
   line-height: 16px;
   color: $color-default-white;

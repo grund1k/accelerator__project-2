@@ -8,7 +8,7 @@
   }
 
   &--closed .accordion__element--footer {
-    display: flex;
+    display: block;
   }
 
   &--open .description__text {

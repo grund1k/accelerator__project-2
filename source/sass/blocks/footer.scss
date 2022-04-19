@@ -89,6 +89,11 @@
   @include vp-1023 {
     margin-right: 130px;
   }
+
+  @include vp-767 {
+    margin-right: 0;
+    margin-top: 0;
+  }
 }
 
 .footer__contacts {
@@ -102,6 +107,7 @@
   @include vp-767 {
     justify-self: unset;
     margin-left: 0;
+    margin-top: 0;
   }
 }
 

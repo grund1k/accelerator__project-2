@@ -41,6 +41,17 @@ const validateChecoxInput = (element) => {
   element.reportValidity();
 };
 
+const setKeyCheckboxToggle = (evt, element) => {
+  if (evt.key === 'Enter' || evt.keyCode === 32) {
+    evt.preventDefault();
+    if (element.checked) {
+      element.checked = false;
+    } else {
+      element.checked = true;
+    }
+  }
+};
+
 const addValidationListeners = () => {
   for (let userNameInput of userNameInputs) {
     userNameInput.addEventListener('input', () => validateNameInput(userNameInput));
@@ -51,6 +62,7 @@ const addValidationListeners = () => {
   }
 
   for (let formCheckbox of formCheckboxes) {
+    formCheckbox.labels[0].addEventListener('keydown', (evt) => setKeyCheckboxToggle(evt, formCheckbox));
     formCheckbox.addEventListener('change', () => validateChecoxInput(formCheckbox));
   }
 };

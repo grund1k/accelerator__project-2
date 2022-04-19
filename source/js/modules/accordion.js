@@ -29,30 +29,30 @@ const changeButtons = (button) => {
 
   if (button.classList.contains('accordion__button--text')) {
     if (button.classList.contains('accordion__button--closed')) {
-      // button.classList.remove('accordion__button--closed');
-      // button.classList.add('accordion__button--open');
       button.textContent = 'Подробнее';
     } else if (button.classList.contains('accordion__button--open')) {
-      // button.classList.remove('accordion__button--open');
-      // button.classList.add('accordion__button--closed');
       button.textContent = 'Свернуть';
     }
+  }
+};
+
+const setAccordionClickLogic = (button) => {
+  switchAccordion(button.parentElement);
+  changeButtons(button);
+  if (accordions) {
+    accordions.forEach((element) => {
+      if (element !== button.parentElement) {
+        element.classList.remove('accordion--open');
+        element.classList.add('accordion--closed');
+      }
+    });
   }
 };
 
 if (accordionButtons) {
   accordionButtons.forEach((button) => {
     button.addEventListener('click', () => {
-      switchAccordion(button.parentElement);
-      changeButtons(button);
-      if (accordions) {
-        accordions.forEach((element) => {
-          if (element !== button.parentElement) {
-            element.classList.remove('accordion--open');
-            element.classList.add('accordion--closed');
-          }
-        });
-      }
+      setAccordionClickLogic(button);
     });
   });
 }

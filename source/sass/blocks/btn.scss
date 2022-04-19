@@ -7,6 +7,11 @@
 
   font-family: $extended-ff-placeholder;
   color: $color-alice-blue;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
 
   background-color: transparent;
   border: 1px solid $color-alice-blue;
@@ -25,6 +30,11 @@
     pointer-events: none;
   }
 
+  @include vp-767 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {
@@ -32,31 +42,28 @@
     }
   }
 
+  &--border-none {
+    border: none;
+  }
+
+  &--fs14 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
   &--header {
     padding: 11px 16px;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
   }
 
   &--deep-sky-blue {
-    border: none;
     background-color: $color-deep-sky-blue;
   }
 
   &--intro {
     max-width: 410px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     padding: 17px 20px;
 
     @include vp-767 {
-      font-size: 14px;
-      line-height: 16px;
       padding: 12px 20px;
     }
   }
@@ -64,11 +71,6 @@
   &--description {
     color: $color-deep-sky-blue;
     border-color: $color-deep-sky-blue;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     min-height: 45px;
     min-width: 180px;
 
@@ -80,13 +82,8 @@
 
   &--submit {
     background-color: $color-black-pearl;
-    border: none;
-    font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
     min-height: 45px;
   }
 

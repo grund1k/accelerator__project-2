@@ -7,10 +7,10 @@
     <meta name="description" content="Описание проекта">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
@@ -29,7 +29,7 @@
 
             <ul class="header__contacts contacts">
               <li class="contacts__list-item">
-                <a class="contacts__link" href="mailto:info@sd.ru">
+                <a href="mailto:info@sd.ru">
                   <svg width="20" height="20">
                     <use xlink:href="img/sprite_auto.svg#email"></use>
                   </svg>
@@ -37,7 +37,7 @@
                 </a>
               </li>
               <li class="contacts__list-item">
-                <a class="contacts__link" href="tel:+74950005252">
+                <a href="tel:+74950005252">
                   <svg width="20" height="20">
                     <use xlink:href="img/sprite_auto.svg#phone-call"></use>
                   </svg>
@@ -46,7 +46,7 @@
               </li>
             </ul>
 
-            <button class="header__btn btn btn--header" data-open-modal="order-call">Заказать звонок</button>
+            <button class="header__btn btn btn--header btn--fs14" data-open-modal="order-call">Заказать звонок</button>
           </div>
         </div>
       </header>
@@ -57,7 +57,7 @@
               <h1 class="visually-hidden">Smart Device сервис по производству печатных плат</h1>
               <h2>Печатные платы</h2>
               <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-              <a class="intro__btn btn btn--deep-sky-blue btn--intro" href="#form-section">
+              <a class="intro__btn btn btn--border-none btn--deep-sky-blue btn--intro" href="#form-section">
                 <span class="intro__btn-full-text">Получить бесплатную консультацию</span>
                 <span class="intro__btn-short-text">бесплатная консультация</span>
               </a>
@@ -121,7 +121,7 @@
                   <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
                 </div>
 
-                <button class="description__btn btn btn--description accordion__button accordion__button--text accordion__button--closed">Подробнее</button>
+                <button class="description__btn btn btn--description btn--fs14 accordion__button accordion__button--text accordion__button--closed">Подробнее</button>
               </div>
             </div>
         </section>
@@ -137,21 +137,33 @@
             <ul class="goods-list">
               <li class="goods-list__item goods-list__item--first-card">
                 <a href="#">
-                  <img src="img/cards.jpg" width="350" height="650" alt="">
+                  <picture>
+                    <source type="image/webp" srcset="img/cards.webp 1x, img/cards@2x.webp 2x">
+                    <!-- 1х: 910px; 2x: 1820px -->
+                    <img src="img/cards.jpg" srcset="img/cards@2x.jpg 2x" width="350" height="650" alt="Изображение печатной платы">
+                  </picture>
                   <span>Производство печатных плат</span>
                   <div class="goods__button"><span class="visually-hidden">Перейти к товару</span></div>
                 </a>
               </li>
               <li class="goods-list__item goods-list__item--second-card">
                 <a href="#">
-                  <img src="img/cards.jpg" width="350" height="650" alt="">
+                  <picture>
+                    <source type="image/webp" srcset="img/cards.webp 1x, img/cards@2x.webp 2x">
+                    <!-- 1х: 910px; 2x: 1820px -->
+                    <img src="img/cards.jpg" srcset="img/cards@2x.jpg 2x" width="350" height="650" alt="Изображение печатной платы">
+                  </picture>
                   <span>Монтаж печатных плат</span>
                   <div class="goods__button"><span class="visually-hidden">Перейти к товару</span></div>
                 </a>
               </li>
               <li class="goods-list__item goods-list__item--third-card">
                 <a href="#">
-                  <img src="img/cards.jpg" width="350" height="650" alt="">
+                  <picture>
+                    <source type="image/webp" srcset="img/cards.webp 1x, img/cards@2x.webp 2x">
+                    <!-- 1х: 910px; 2x: 1820px -->
+                    <img src="img/cards.jpg" srcset="img/cards@2x.jpg 2x" width="350" height="650" alt="Изображение печатной платы">
+                  </picture>
                   <span>Комплектующие для&nbsp;светотехники</span>
                   <div class="goods__button"><span class="visually-hidden">Перейти к товару</span></div>
                 </a>
@@ -178,9 +190,9 @@
                     <textarea name="user__question" id="user__question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                     <label class="visually-hidden" for="user__question">Введите ваш впорос</label>
                   </div>
-                  <button class="form__submit btn btn--submit btn--medium-width" type="submit">Задать вопрос</button>
+                  <button class="form__submit btn btn--border-none btn--submit btn--medium-width" type="submit">Задать вопрос</button>
                   <div class="form__checkbox">
-                    <input class="visually-hidden" type="checkbox" name="user__agree" id="user__agree" data-checkbox-input required>
+                    <input class="visually-hidden" type="checkbox" name="user__agree" id="user__agree" tabindex="-1" data-checkbox-input required>
                     <label for="user__agree" tabindex="0">Я согласен на обработку  персональных данных</label>
                   </div>
                 </div>
@@ -231,51 +243,55 @@
             </ul>
           </div>
 
-          <nav class="footer__nav footer__underline footer__accordion accordion accordion--open">
-            <h2>Разделы сайта</h2>
-            <button class="accordion__button accordion__button--closed accordion__button--footer"><span class="visually-hidden">Открыть раздел</span></button>
-            <ul class="accordion__element accordion__element--footer nav">
-              <li class="nav__item">
-                <a class="nav__link" href="#">О Компаниии</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Продукты</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Производство печатных плат</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Монтаж печатных плат</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Комплектующие</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Доставка</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">Контакты</a>
-              </li>
-            </ul>
+          <nav class="footer__nav footer__underline">
+            <div class=" footer__accordion accordion accordion--action-wrapper accordion--open">
+              <h2>Разделы сайта</h2>
+              <button class="accordion__button accordion__button--closed accordion__button--footer"><span class="visually-hidden">Открыть раздел</span></button>
+              <ul class="accordion__element accordion__element--footer nav">
+                <li class="nav__item">
+                  <a href="#">О Компаниии</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Продукты</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Производство&nbsp;печатных плат</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Монтаж печатных плат</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Комплектующие</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Доставка</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </nav>
 
-          <div class="footer__contacts footer__underline footer__accordion accordion accordion--open">
-            <h2>Наш офис</h2>
-            <button class="accordion__button accordion__button--closed accordion__button--footer"><span class="visually-hidden">Открыть раздел</span></button>
-            <ul class="accordion__element accordion__element--footer contacts contacts--footer">
-              <li class="contacts__list-item contacts__list-item--footer">
-                <a class="contacts__link contacts__link--footer" href="https://yandex.ru/maps/-/CCUFEWe-WD">г. Мытищи, Олимпийский&nbsp;проспект, д.10</a>
-              </li>
-              <li class="contacts__list-item contacts__list-item--footer">
-                <a class="contacts__link contacts__link--footer" href="tel:+74955894050">+7 (495) 589-40-50</a>
-              </li>
-              <li class="contacts__list-item contacts__list-item--footer">
-                <a class="contacts__link contacts__link--footer" href="tel:+79253895829">+7 (925) 389-58-29</a>
-              </li>
-              <li class="contacts__list-item contacts__list-item--footer">
-                <a class="contacts__link contacts__link--footer" href="tel:+79253647813">+7 (925) 364-78-13</a>
-              </li>
-            </ul>
+          <div class="footer__contacts footer__underline">
+            <div class=" footer__accordion accordion accordion--action-wrapper accordion--open">
+              <h2>Наш офис</h2>
+              <button class="accordion__button accordion__button--closed accordion__button--footer"><span class="visually-hidden">Открыть раздел</span></button>
+              <ul class="accordion__element accordion__element--footer contacts contacts--footer">
+                <li class="contacts__list-item contacts__list-item--footer">
+                  <a href="https://yandex.ru/maps/-/CCUFEWe-WD">г. Мытищи, Олимпийский&nbsp;проспект, д.10</a>
+                </li>
+                <li class="contacts__list-item contacts__list-item--footer">
+                  <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+                </li>
+                <li class="contacts__list-item contacts__list-item--footer">
+                  <a href="tel:+79253895829">+7 (925) 389-58-29</a>
+                </li>
+                <li class="contacts__list-item contacts__list-item--footer">
+                  <a href="tel:+79253647813">+7 (925) 364-78-13</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
@@ -303,7 +319,7 @@
                   <textarea name="user__question" id="user__question_call" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
                   <label class="visually-hidden" for="user__question_call">Введите ваш впорос</label>
                 </div>
-                <button class="form__submit form__submit--modal btn btn--submit btn--full-width" type="submit">Отправить</button>
+                <button class="form__submit form__submit--modal btn btn--border-none btn--submit btn--full-width" type="submit">Отправить</button>
                 <div class="form__checkbox form__checkbox--modal">
                   <input class="visually-hidden" type="checkbox" name="user__agree" id="user__agree_call" data-checkbox-input required>
                   <label for="user__agree_call" tabindex="0">Я согласен на обработку  персональных данных</label>
