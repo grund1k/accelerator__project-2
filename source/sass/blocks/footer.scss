@@ -28,7 +28,7 @@
 .footer__social {
   @include vp-1023 {
     grid-column: 1/3;
-    display: flex
+    display: flex;
   }
 
   @include vp-767 {

@@ -26,20 +26,74 @@
   max-width: 350px;
   max-height: 650px;
 
+  &--first-card img {
+    width: 434%;
+    top: -33%;
+    left: -55%;
+  }
+
+  &--second-card img {
+    width: 450%;
+    left: -163%;
+    top: -37%;
+  }
+
+  &--third-card img {
+    width: 446%;
+    left: -269%;
+    top: -34%;
+  }
+
+
   @include vp-1023 {
     max-width: 670px;
     max-height: 250px;
     margin-bottom: 30px;
+
+    &--first-card img {
+      width: 216%;
+      bottom: 611px;
+      left: -34%;
+    }
+
+    &--second-card img {
+      width: 229%;
+      left: -97%;
+      bottom: 417px;
+    }
+
+    &--third-card img {
+      width: 227%;
+      left: -23%;
+      bottom: 456px;
+    }
   }
 
   @include vp-767 {
     max-width: 270px;
     max-height: 250px;
+
+    &--first-card img {
+      width: 553%;
+      left: -140%;
+      bottom: 386px;
+    }
+
+    &--second-card img {
+      width: 535%;
+      left: -129%;
+      bottom: 605px;
+    }
+
+    &--third-card img {
+      width: 550%;
+      left: -325%;
+      bottom: 481px;
+    }
   }
 }
 
 .goods-list__item a {
-
   &::before {
     content: "";
     position: absolute;
@@ -61,7 +115,6 @@
   }
 
   @include vp-1023 {
-
     &::before {
       width: 670px;
       height: 250px;
@@ -69,7 +122,6 @@
   }
 
   @include vp-767 {
-
     &::before {
       width: 270px;
       height: 250px;
@@ -86,68 +138,6 @@
 
   @include vp-1023 {
     min-height: 250px;
-  }
-}
-
-
-.goods-list__item {
-
-  &--first-card img {
-    width: 434%;
-    top: -33%;
-    left: -55%;
-  }
-
-  &--second-card img {
-    width: 450%;
-    left: -163%;
-    top: -37%;
-  }
-
-  &--third-card img {
-    width: 446%;
-    left: -269%;
-    top: -34%;
-  }
-
-  @include vp-1023 {
-    &--first-card img {
-      width: 216%;
-      bottom: 611px;
-      left: -34%;
-    }
-
-    &--second-card img {
-      width: 229%;
-      left: -97%;
-      bottom: 417px;
-    }
-
-    &--third-card img {
-      width: 227%;
-      left: -23%;
-      bottom: 456px;
-    }
-  }
-
-  @include vp-767 {
-    &--first-card img {
-      width: 553%;
-      left: -140%;
-      bottom: 386px;
-    }
-
-    &--second-card img {
-      width: 535%;
-      left: -129%;
-      bottom: 605px;
-    }
-
-    &--third-card img {
-      width: 550%;
-      left: -325%;
-      bottom: 481px;
-    }
   }
 }
 

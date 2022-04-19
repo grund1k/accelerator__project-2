@@ -1,3 +1,5 @@
+import '../utils/focus-lock';
+
 const modal = document.querySelector('.modal');
 const modalCloseSections = document.querySelectorAll('[data-close-modal]');
 const modalOpen = document.querySelector('[data-open-modal]');
