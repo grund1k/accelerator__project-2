@@ -1159,6 +1159,14 @@ button,
   row-gap: 40px;
 }
 
+.goods-list__item img {
+  position: relative;
+  width: 100%;
+  max-width: unset;
+  min-height: 650px;
+  height: auto;
+}
+
 .goods-list__item {
   position: relative;
   overflow: hidden;
@@ -1194,14 +1202,6 @@ button,
   height: 650px;
   background-color: rgba(4, 24, 39, 0.5);
   z-index: 1;
-}
-
-.goods-list__item img {
-  position: relative;
-  width: 100%;
-  max-width: unset;
-  min-height: 650px;
-  height: auto;
 }
 
 .goods-list__item span {
@@ -1714,6 +1714,10 @@ button,
     gap: 0;
   }
 
+  .goods-list__item img {
+    min-height: 250px;
+  }
+
   .goods-list__item {
     max-width: 670px;
     max-height: 250px;
@@ -1741,10 +1745,6 @@ button,
   .goods-list__item a::before {
     width: 670px;
     height: 250px;
-  }
-
-  .goods-list__item img {
-    min-height: 250px;
   }
 
   .goods-list__item span {

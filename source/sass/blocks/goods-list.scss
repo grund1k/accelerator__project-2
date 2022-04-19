@@ -20,6 +20,18 @@
   }
 }
 
+.goods-list__item img {
+  position: relative;
+  width: 100%;
+  max-width: unset;
+  min-height: 650px;
+  height: auto;
+
+  @include vp-1023 {
+    min-height: 250px;
+  }
+}
+
 .goods-list__item {
   position: relative;
   overflow: hidden;
@@ -126,18 +138,6 @@
       width: 270px;
       height: 250px;
     }
-  }
-}
-
-.goods-list__item img {
-  position: relative;
-  width: 100%;
-  max-width: unset;
-  min-height: 650px;
-  height: auto;
-
-  @include vp-1023 {
-    min-height: 250px;
   }
 }
 
