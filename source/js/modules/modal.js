@@ -4,7 +4,6 @@ const modal = document.querySelector('.modal');
 const modalCloseSections = document.querySelectorAll('[data-close-modal]');
 const modalOpen = document.querySelector('[data-open-modal]');
 const body = document.querySelector('.body');
-const firstFocusElement = modal.querySelector('[data-focus]');
 
 const onEscKeydown = (evt) => {
   const isEscKey = evt.key === 'Escape' || evt.key === 'Esc';
@@ -18,7 +17,6 @@ const onEscKeydown = (evt) => {
 const openModal = () => {
   modal.classList.add('is-active');
   body.style.position = 'fixed';
-  firstFocusElement.focus();
   window.focusLock.lock('.modal.is-active');
 
   modalCloseSections.forEach((section) => {

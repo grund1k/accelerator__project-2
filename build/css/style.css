@@ -1166,6 +1166,24 @@ button,
   max-height: 650px;
 }
 
+.goods-list__item--first-card img {
+  width: 434%;
+  top: -33%;
+  left: -55%;
+}
+
+.goods-list__item--second-card img {
+  width: 450%;
+  left: -163%;
+  top: -37%;
+}
+
+.goods-list__item--third-card img {
+  width: 446%;
+  left: -269%;
+  top: -34%;
+}
+
 .goods-list__item a::before {
   content: "";
   position: absolute;
@@ -1184,24 +1202,6 @@ button,
   max-width: unset;
   min-height: 650px;
   height: auto;
-}
-
-.goods-list__item--first-card img {
-  width: 434%;
-  top: -33%;
-  left: -55%;
-}
-
-.goods-list__item--second-card img {
-  width: 450%;
-  left: -163%;
-  top: -37%;
-}
-
-.goods-list__item--third-card img {
-  width: 446%;
-  left: -269%;
-  top: -34%;
 }
 
 .goods-list__item span {
@@ -1304,7 +1304,7 @@ button,
 
 .form__input input,
 .form__textarea textarea {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", "Courier New", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1626,7 +1626,7 @@ button,
   .intro {
     padding-top: 179px;
     padding-bottom: 205px;
-    background-position: center,-122px;
+    background-position: center, -122px;
   }
 
   .intro__wrapper {
@@ -1720,15 +1720,6 @@ button,
     margin-bottom: 30px;
   }
 
-  .goods-list__item a::before {
-    width: 670px;
-    height: 250px;
-  }
-
-  .goods-list__item img {
-    min-height: 250px;
-  }
-
   .goods-list__item--first-card img {
     width: 216%;
     bottom: 611px;
@@ -1745,6 +1736,15 @@ button,
     width: 227%;
     left: -23%;
     bottom: 456px;
+  }
+
+  .goods-list__item a::before {
+    width: 670px;
+    height: 250px;
+  }
+
+  .goods-list__item img {
+    min-height: 250px;
   }
 
   .goods-list__item span {
@@ -1929,7 +1929,7 @@ button,
   .intro {
     padding-top: 150px;
     padding-bottom: 190px;
-    background-position: center,-232px;
+    background-position: center, -232px;
   }
 
   .intro h2 {
@@ -2047,11 +2047,6 @@ button,
     max-height: 250px;
   }
 
-  .goods-list__item a::before {
-    width: 270px;
-    height: 250px;
-  }
-
   .goods-list__item--first-card img {
     width: 553%;
     left: -140%;
@@ -2068,6 +2063,11 @@ button,
     width: 550%;
     left: -325%;
     bottom: 481px;
+  }
+
+  .goods-list__item a::before {
+    width: 270px;
+    height: 250px;
   }
 
   .goods-list__item span {
