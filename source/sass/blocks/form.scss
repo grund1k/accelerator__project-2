@@ -165,6 +165,10 @@
   line-height: 16px;
   color: $color-default-white;
   opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .form__checkbox input + label {

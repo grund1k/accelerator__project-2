@@ -1416,6 +1416,10 @@ button,
   opacity: 0.8;
 }
 
+.form__checkbox label:hover {
+  opacity: 1;
+}
+
 .form__checkbox input + label {
   display: -webkit-box;
   display: -ms-flexbox;
