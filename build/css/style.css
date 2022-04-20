@@ -1556,6 +1556,13 @@ button,
     opacity: 0.8;
   }
 
+  .btn--description:hover,
+  .btn--description:focus {
+    opacity: 0.7;
+    background-color: #00b2ff;
+    color: #ffffff;
+  }
+
   .contacts a:hover,
   .contacts a:focus {
     opacity: 0.8;
