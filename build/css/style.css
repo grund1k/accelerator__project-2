@@ -1005,7 +1005,7 @@ button,
   margin: 0 0 47px 0;
 }
 
-.intro__btn-short-text {
+.intro__btn--mobile {
   display: none;
 }
 
@@ -1950,11 +1950,11 @@ button,
     margin-left: 0;
   }
 
-  .intro__btn-full-text {
+  .intro__btn {
     display: none;
   }
 
-  .intro__btn-short-text {
+  .intro__btn--mobile {
     display: block;
   }
 

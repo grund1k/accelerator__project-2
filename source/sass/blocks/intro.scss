@@ -82,6 +82,10 @@
 }
 
 .intro__btn {
+  &--mobile {
+    display: none;
+  }
+
   @include vp-1023 {
     margin-left: 45px;
   }
@@ -89,18 +93,12 @@
   @include vp-767 {
     margin-left: 0;
   }
-}
 
-.intro__btn-full-text {
   @include vp-767 {
     display: none;
-  }
-}
 
-.intro__btn-short-text {
-  display: none;
-
-  @include vp-767 {
-    display: block;
+    &--mobile {
+      display: block;
+    }
   }
 }
