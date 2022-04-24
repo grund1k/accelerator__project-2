@@ -14,7 +14,8 @@ const onEscKeydown = (evt) => {
   }
 };
 
-const openModal = () => {
+const openModal = (evt) => {
+  evt.preventDefault();
   modal.classList.add('is-active');
   body.style.position = 'fixed';
   window.focusLock.lock('.modal.is-active');
@@ -39,4 +40,6 @@ const closeModal = () => {
   document.removeEventListener('keydown', onEscKeydown);
 };
 
-modalOpen.addEventListener('click', openModal);
+modalOpen.addEventListener('click', (evt) => {
+  openModal(evt);
+});
