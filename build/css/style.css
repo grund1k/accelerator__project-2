@@ -1487,24 +1487,34 @@ button,
   text-decoration: underline;
 }
 
-.accordion--open .accordion__element {
+.accordion__element.is-active {
   display: block;
 }
 
-.accordion--closed .accordion__element {
-  display: none;
-}
-
-.accordion--closed .accordion__element--footer {
-  display: block;
-}
-
-.accordion--open .description__text {
-  max-height: none;
+.accordion__element--footer.is-active .accordion__button--footer {
+  background-image: url("../img/svg/accordion-close.svg");
 }
 
 .accordion__button--footer {
   display: none;
+}
+
+[data-accordion="element"].is-active > [data-accordion="content"] {
+  max-height: unset;
+}
+
+[data-accordion="parent"].no-transition [data-accordion="content"] {
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+[data-accordion="content"] {
+  max-height: 0;
+  -webkit-transition: max-height 0.3s;
+  -o-transition: max-height 0.3s;
+  transition: max-height 0.3s;
+  overflow: hidden;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -2150,14 +2160,6 @@ button,
     font-size: 14px;
   }
 
-  .accordion--closed .accordion__element--footer {
-    display: none;
-  }
-
-  .accordion--open .description__text {
-    max-height: none;
-  }
-
   .accordion__button--footer {
     display: block;
     border: none;
@@ -2167,16 +2169,9 @@ button,
     background-repeat: no-repeat;
     background-position: center;
     background-color: transparent;
+    background-image: url("../img/svg/accordion-open.svg");
     margin-right: 25px;
     margin-top: -3px;
-  }
-
-  .accordion__button--closed {
-    background-image: url("../img/svg/accordion-open.svg");
-  }
-
-  .accordion__button--open {
-    background-image: url("../img/svg/accordion-close.svg");
   }
 }
 

@@ -1,9 +1,11 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import './modules/accordion';
+import {initAccordions} from './modules/accordions/init-accodrion';
 import './modules/telephone-mask';
 import {addValidationListeners} from './modules/form';
 import {setSmoothsScroll} from './modules/smooth-scroll';
 import './modules/modal';
+import './modules/no-js';
+import './modules/switch-button-text';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -23,5 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
+    initAccordions();
   });
 });
