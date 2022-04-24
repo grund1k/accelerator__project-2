@@ -38,10 +38,28 @@
     color: $color-alice-blue;
   }
 
+  @media (min-width: 771px) and (max-width: 1023px) {
+    max-width: unset;
+
+    & p {
+      max-width: unset;
+    }
+  }
+
   @include vp-1023 {
     max-width: 320px;
     min-height: 360px;
     padding: 40px 42px 30px 40px;
+  }
+
+
+  @media (min-width: 321px) and (max-width: 766px) {
+    max-width: unset;
+    width: 100%;
+
+    & p {
+      max-width: unset;
+    }
   }
 
   @include vp-767 {

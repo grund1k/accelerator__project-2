@@ -1,21 +1,19 @@
 .goods-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 84px;
   list-style: none;
   margin: 0;
   padding: 0;
-  row-gap: 40px;
 
-  @media (max-width: 1070px) {
-    justify-content: center;
+  @media (max-width: 1098px) {
     gap: 40px;
   }
 
   @include vp-1023 {
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
-    flex-direction: column;
-    justify-content: flex-start;
     gap: 0;
   }
 }
@@ -112,8 +110,8 @@
     top: 0;
     right: 0;
     left: 0;
-    width: 350px;
-    height: 650px;
+    width: 100%;
+    height: 100%;
     background-color: rgba(4, 24, 39, 0.5);
     z-index: 1;
   }
@@ -123,20 +121,6 @@
     &:hover::before,
     &:focus::before {
       background-color: rgba(4, 24, 39, 0.2);
-    }
-  }
-
-  @include vp-1023 {
-    &::before {
-      width: 670px;
-      height: 250px;
-    }
-  }
-
-  @include vp-767 {
-    &::before {
-      width: 270px;
-      height: 250px;
     }
   }
 }

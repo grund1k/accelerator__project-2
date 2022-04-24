@@ -686,6 +686,7 @@ button,
 }
 
 .btn--header {
+  max-width: 160px;
   padding: 11px 16px;
 }
 
@@ -1112,18 +1113,14 @@ button,
 }
 
 .goods-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 84px;
   list-style: none;
   margin: 0;
   padding: 0;
-  row-gap: 40px;
 }
 
 .goods-list__item img {
@@ -1165,8 +1162,8 @@ button,
   top: 0;
   right: 0;
   left: 0;
-  width: 350px;
-  height: 650px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(4, 24, 39, 0.5);
   z-index: 1;
 }
@@ -1226,11 +1223,21 @@ button,
   top: 0;
 }
 
-.form-section::after {
+.form-section__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.form-section__container::before {
   content: "";
   position: absolute;
-  bottom: 37%;
-  left: 18%;
+  bottom: 14%;
+  left: 1%;
   width: 518px;
   height: 285px;
   background-image: url("../img/paper_airplane.png");
@@ -1239,8 +1246,9 @@ button,
 }
 
 .form-section__wrapper {
+  position: relative;
+  z-index: 1;
   max-width: 596px;
-  margin-left: auto;
 }
 
 .form h2 {
@@ -1572,11 +1580,8 @@ button,
   }
 }
 
-@media (max-width: 1070px) {
+@media (max-width: 1098px) {
   .goods-list {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     gap: 40px;
   }
 }
@@ -1691,16 +1696,12 @@ button,
   }
 
   .goods-list {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
     gap: 0;
   }
 
@@ -1732,11 +1733,6 @@ button,
     bottom: 456px;
   }
 
-  .goods-list__item a::before {
-    width: 670px;
-    height: 250px;
-  }
-
   .goods-list__item span {
     max-width: 139px;
     top: 38px;
@@ -1754,6 +1750,14 @@ button,
 
   .form-section::before,
   .form-section::after {
+    display: none;
+  }
+
+  .form-section__container {
+    display: block;
+  }
+
+  .form-section__container::before {
     display: none;
   }
 
@@ -2055,11 +2059,6 @@ button,
     bottom: 481px;
   }
 
-  .goods-list__item a::before {
-    width: 270px;
-    height: 250px;
-  }
-
   .goods-list__item span {
     font-size: 18px;
     max-width: 127px;
@@ -2206,6 +2205,27 @@ button,
   }
 }
 
+@media (min-width: 771px) and (max-width: 1023px) {
+  .features-list__item {
+    max-width: unset;
+  }
+
+  .features-list__item p {
+    max-width: unset;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 766px) {
+  .features-list__item {
+    max-width: unset;
+    width: 100%;
+  }
+
+  .features-list__item p {
+    max-width: unset;
+  }
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro {
     background-image: url("../img/top-bg@2x.jpg");
@@ -2215,7 +2235,7 @@ button,
     background-image: url("../img/2022@2x.png");
   }
 
-  .form-section::after {
+  .form-section__container::before {
     background-image: url("../img/paper_airplane@2x.png");
   }
 }
