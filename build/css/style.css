@@ -705,19 +705,19 @@ button,
   min-width: 180px;
 }
 
-.btn--submit {
-  background-color: #041827;
-  font-size: 16px;
-  line-height: 19px;
-  min-height: 45px;
-}
-
 .btn--medium-width {
   max-width: 265px;
 }
 
 .btn--full-width {
   width: 100%;
+}
+
+.btn--submit {
+  background-color: #041827;
+  font-size: 16px;
+  line-height: 19px;
+  min-height: 45px;
 }
 
 .modal {
@@ -843,7 +843,7 @@ button,
 }
 
 .header__logo {
-  margin-right: 172px;
+  margin-right: 161px;
 }
 
 .header__wrapper {
@@ -989,6 +989,9 @@ button,
   list-style: none;
   margin: 0;
   padding: 0;
+  -webkit-column-gap: 31px;
+  -moz-column-gap: 31px;
+  column-gap: 31px;
 }
 
 .features-list__item {
@@ -1086,7 +1089,7 @@ button,
 }
 
 .description__btn {
-  margin-top: 40px;
+  margin-top: 18px;
 }
 
 .goods {
@@ -1363,7 +1366,7 @@ button,
 }
 
 .form__checkbox {
-  margin-top: 20px;
+  margin-top: 23px;
   margin-left: 10px;
 }
 
@@ -1421,17 +1424,23 @@ button,
 .footer__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: -webkit-max-content 1fr 1fr;
-  -ms-grid-columns: max-content 1fr 1fr;
-  grid-template-columns: -webkit-max-content 1fr 1fr;
-  grid-template-columns: max-content 1fr 1fr;
+  -ms-grid-columns: -webkit-max-content 1fr;
+  -ms-grid-columns: max-content 1fr;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
   max-width: 1222px;
   margin: 0 auto;
 }
 
 .footer__logo {
   margin-bottom: 30px;
-  margin-right: 172px;
+  margin-right: 161px;
+}
+
+.footer__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__social-list {
@@ -1467,9 +1476,9 @@ button,
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
-  -webkit-column-gap: 50px;
-  -moz-column-gap: 50px;
-  column-gap: 50px;
+  -webkit-column-gap: 29px;
+  -moz-column-gap: 29px;
+  column-gap: 29px;
 }
 
 .nav__item {
@@ -1669,7 +1678,7 @@ button,
   }
 
   .description__btn {
-    margin-top: 0;
+    margin-top: -3px;
   }
 
   .goods {
@@ -1678,7 +1687,7 @@ button,
   }
 
   .goods h2 {
-    margin-bottom: 37px;
+    margin-bottom: 39px;
   }
 
   .goods-list {
@@ -1801,6 +1810,10 @@ button,
     margin-right: auto;
   }
 
+  .footer__content-wrapper {
+    grid-column: 1/-1;
+  }
+
   .footer__social-list {
     margin-left: 0;
     margin-right: -5px;
@@ -1845,6 +1858,10 @@ button,
     max-width: unset;
   }
 
+  .btn--submit {
+    font-size: 16px;
+  }
+
   .modal__wrapper {
     padding: 60px 16px;
   }
@@ -1873,6 +1890,11 @@ button,
   .logo img {
     width: 35px;
     height: 35px;
+  }
+
+  .logo--footer img {
+    width: 215px;
+    height: 55px;
   }
 
   .contacts--footer {
@@ -1921,7 +1943,9 @@ button,
   }
 
   .intro__btn--mobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .features {
@@ -2081,7 +2105,7 @@ button,
   }
 
   .form__checkbox {
-    margin-top: 2px;
+    margin-top: 4px;
     margin-left: 5px;
   }
 
@@ -2109,13 +2133,20 @@ button,
   }
 
   .footer__logo {
-    margin-right: 17px;
+    margin-right: 3px;
     margin-bottom: 15px;
+  }
+
+  .footer__content-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .footer__social-list {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 
   .footer h2 {

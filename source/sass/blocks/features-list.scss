@@ -5,6 +5,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  column-gap: 31px;
 
   @include vp-1023 {
     column-gap: 27px;

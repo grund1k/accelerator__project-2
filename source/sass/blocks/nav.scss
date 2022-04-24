@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   column-count: 2;
-  column-gap: 50px;
+  column-gap: 29px;
 
   @include vp-1023 {
     column-count: 1;

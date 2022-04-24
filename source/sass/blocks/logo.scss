@@ -7,3 +7,10 @@
     height: 35px;
   }
 }
+
+.logo--footer img {
+  @include vp-767 {
+    width: 215px;
+    height: 55px;
+  }
+}

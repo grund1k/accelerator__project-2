@@ -10,7 +10,7 @@
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: max-content 1fr 1fr;
+  grid-template-columns: max-content 1fr;
   max-width: 1222px;
   margin: 0 auto;
 
@@ -40,15 +40,27 @@
 
 .footer__logo {
   margin-bottom: 30px;
-  margin-right: 172px;
+  margin-right: 161px;
 
   @include vp-1023 {
     margin-right: auto;
   }
 
   @include vp-767 {
-    margin-right: 17px;
+    margin-right: 3px;
     margin-bottom: 15px;
+  }
+}
+
+.footer__content-wrapper {
+  display: flex;
+
+  @include vp-1023 {
+    grid-column: 1/-1;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
   }
 }
 
@@ -63,7 +75,7 @@
 
   @include vp-767 {
     margin-top: 0;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 }
 
