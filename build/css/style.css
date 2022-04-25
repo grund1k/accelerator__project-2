@@ -1380,6 +1380,12 @@ button,
   margin-left: 10px;
 }
 
+.form__checkbox--order {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
 .form__checkbox--modal {
   margin-top: 0;
   margin-left: 8px;
