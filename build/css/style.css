@@ -1594,6 +1594,11 @@ button,
   .header__gradient-wrapper {
     padding-top: 20px;
     padding-bottom: 23px;
+    position: relative;
+  }
+
+  .header__intro {
+    margin-top: -98px;
   }
 
   .header__contacts {
@@ -1881,6 +1886,10 @@ button,
 
   .header__gradient-wrapper {
     padding-top: 15px;
+  }
+
+  .header__intro {
+    margin-top: -73px;
   }
 
   .header__logo {
