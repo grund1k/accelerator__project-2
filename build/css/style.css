@@ -1605,6 +1605,12 @@ button,
   }
 }
 
+@media (max-width: 1044px) {
+  .footer__nav {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 1023px) {
   .container {
     padding: 0 50px;
