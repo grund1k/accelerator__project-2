@@ -1127,37 +1127,26 @@ button,
   padding: 0;
 }
 
-.goods-list__item img {
-  position: relative;
-  width: 100%;
-  max-width: unset;
-  min-height: 650px;
-  height: auto;
-}
-
 .goods-list__item {
   position: relative;
   overflow: hidden;
+  width: 100%;
   max-width: 350px;
-  max-height: 650px;
+  min-height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.goods-list__item--first-card img {
-  width: 434%;
-  top: -33%;
-  left: -55%;
+.goods-list__item--first-card {
+  background-image: url("../img/card-1.jpg");
 }
 
-.goods-list__item--second-card img {
-  width: 450%;
-  left: -163%;
-  top: -37%;
+.goods-list__item--second-card {
+  background-image: url("../img/card-2.jpg");
 }
 
-.goods-list__item--third-card img {
-  width: 446%;
-  left: -269%;
-  top: -34%;
+.goods-list__item--third-card {
+  background-image: url("../img/card-3.jpg");
 }
 
 .goods-list__item a::before {
@@ -1599,6 +1588,20 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1024px), (-o-min-device-pixel-ratio: 2/1) and (min-width: 1024px), (min-resolution: 2dppx) and (min-width: 1024px) {
+  .goods-list__item--first-card {
+    background-image: url("../img/card-1@2x.jpg");
+  }
+
+  .goods-list__item--second-card {
+    background-image: url("../img/card-2@2x.jpg");
+  }
+
+  .goods-list__item--third-card {
+    background-image: url("../img/card-3@2x.jpg");
+  }
+}
+
 @media (max-width: 1098px) {
   .goods-list {
     gap: 40px;
@@ -1735,32 +1738,23 @@ button,
     gap: 0;
   }
 
-  .goods-list__item img {
-    min-height: 250px;
-  }
-
   .goods-list__item {
-    max-width: 670px;
-    max-height: 250px;
+    max-width: unset;
+    min-width: 670px;
+    min-height: 250px;
     margin-bottom: 30px;
   }
 
-  .goods-list__item--first-card img {
-    width: 216%;
-    bottom: 611px;
-    left: -34%;
+  .goods-list__item--first-card {
+    background-image: url("../img/card-1-tablet.jpg");
   }
 
-  .goods-list__item--second-card img {
-    width: 229%;
-    left: -97%;
-    bottom: 417px;
+  .goods-list__item--second-card {
+    background-image: url("../img/card-2-tablet.jpg");
   }
 
-  .goods-list__item--third-card img {
-    width: 227%;
-    left: -23%;
-    bottom: 456px;
+  .goods-list__item--third-card {
+    background-image: url("../img/card-3-tablet.jpg");
   }
 
   .goods-list__item span {
@@ -1866,6 +1860,20 @@ button,
     -webkit-column-count: 1;
     -moz-column-count: 1;
     column-count: 1;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 1023px), (min-resolution: 2dppx) and (max-width: 1023px) {
+  .goods-list__item--first-card {
+    background-image: url("../img/card-1-tablet@2x.jpg");
+  }
+
+  .goods-list__item--second-card {
+    background-image: url("../img/card-2-tablet@2x.jpg");
+  }
+
+  .goods-list__item--third-card {
+    background-image: url("../img/card-3-tablet@2x.jpg");
   }
 }
 
@@ -2073,26 +2081,20 @@ button,
   }
 
   .goods-list__item {
-    max-width: 270px;
-    max-height: 250px;
+    min-width: 270px;
+    min-height: 250px;
   }
 
-  .goods-list__item--first-card img {
-    width: 553%;
-    left: -140%;
-    bottom: 386px;
+  .goods-list__item--first-card {
+    background-image: url("../img/card-1-mobile.jpg");
   }
 
-  .goods-list__item--second-card img {
-    width: 535%;
-    left: -129%;
-    bottom: 605px;
+  .goods-list__item--second-card {
+    background-image: url("../img/card-2-mobile.jpg");
   }
 
-  .goods-list__item--third-card img {
-    width: 550%;
-    left: -325%;
-    bottom: 481px;
+  .goods-list__item--third-card {
+    background-image: url("../img/card-3-mobile.jpg");
   }
 
   .goods-list__item span {
@@ -2248,6 +2250,20 @@ button,
     background-image: url("../img/svg/accordion-open.svg");
     margin-right: 25px;
     margin-top: -3px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px), (-o-min-device-pixel-ratio: 2/1) and (max-width: 767px), (min-resolution: 2dppx) and (max-width: 767px) {
+  .goods-list__item--first-card {
+    background-image: url("../img/card-1-mobile@2x.jpg");
+  }
+
+  .goods-list__item--second-card {
+    background-image: url("../img/card-2-mobile@2x.jpg");
+  }
+
+  .goods-list__item--third-card {
+    background-image: url("../img/card-3-mobile@2x.jpg");
   }
 }
 
