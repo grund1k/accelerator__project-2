@@ -2,6 +2,11 @@
   max-height: unset;
 }
 
+[data-accordion="element"].is-active [data-accordion="content"] {
+  max-height: unset;
+  overflow: unset;
+}
+
 [data-accordion="parent"].no-transition [data-accordion="content"] {
   transition: none;
 }
