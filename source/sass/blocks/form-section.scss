@@ -33,17 +33,19 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 118px;
 
   &::before {
     content: "";
-    position: absolute;
-    bottom: 14%;
-    left: 1%;
+    display: block;
     width: 518px;
     height: 285px;
     background-image: url("../img/paper_airplane.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 19px;
 
     @include retina {
       background-image: url("../img/paper_airplane@2x.png");

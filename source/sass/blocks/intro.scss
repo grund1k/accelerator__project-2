@@ -7,7 +7,7 @@
   padding-bottom: 280px;
 
   @include retina {
-    background-image: url("../img/top-bg@2x.jpg");
+    background-image: $intro-gradient, url("../img/top-bg@2x.jpg");
   }
 
   @include vp-1023 {

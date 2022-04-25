@@ -1071,6 +1071,8 @@ button,
   width: 150px;
   height: 320px;
   background-image: url("../img/2022.png");
+  background-size: 150px 320px;
+  background-repeat: no-repeat;
   -ms-flex-negative: 0;
   flex-shrink: 0;
 }
@@ -1233,18 +1235,22 @@ button,
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 118px;
 }
 
 .form-section__container::before {
   content: "";
-  position: absolute;
-  bottom: 14%;
-  left: 1%;
+  display: block;
   width: 518px;
   height: 285px;
   background-image: url("../img/paper_airplane.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  margin-top: 19px;
 }
 
 .form-section__wrapper {
@@ -2262,7 +2268,9 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .intro {
-    background-image: url("../img/top-bg@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/top-bg@2x.jpg");
+    background-image: -o-linear-gradient(top, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/top-bg@2x.jpg");
+    background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/top-bg@2x.jpg");
   }
 
   .description__wrapper::before {

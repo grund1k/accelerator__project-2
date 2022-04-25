@@ -19,6 +19,8 @@
     width: 150px;
     height: 320px;
     background-image: url("../img/2022.png");
+    background-size: 150px 320px;
+    background-repeat: no-repeat;
     flex-shrink: 0;
 
     @include retina {
