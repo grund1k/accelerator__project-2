@@ -125,8 +125,13 @@
   margin-top: 8px;
   justify-self: end;
 
+  @media (max-width: 1118px) {
+    margin-right: 10px;
+  }
+
   @include vp-1023 {
     margin-left: 15px;
+    margin-right: 0;
   }
 
   @include vp-767 {
