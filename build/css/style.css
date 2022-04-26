@@ -867,6 +867,7 @@ button,
   align-self: start;
   margin-right: 62px;
   margin-top: 5px;
+  margin-left: 10px;
 }
 
 .logo img {
@@ -1602,9 +1603,21 @@ button,
   }
 }
 
+@media (max-width: 1260px) {
+  .footer__logo {
+    margin-left: 10px;
+  }
+}
+
 @media (max-width: 1098px) {
   .goods-list {
     gap: 40px;
+  }
+}
+
+@media (max-width: 1067px) {
+  .footer__logo {
+    margin-right: 100px;
   }
 }
 
@@ -1835,6 +1848,7 @@ button,
   }
 
   .footer__logo {
+    margin-left: 0;
     margin-right: auto;
   }
 

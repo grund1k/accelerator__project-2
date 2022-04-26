@@ -42,7 +42,16 @@
   margin-bottom: 30px;
   margin-right: 161px;
 
+  @media (max-width: 1260px) {
+    margin-left: 10px;
+  }
+
+  @media (max-width: 1067px) {
+    margin-right: 100px;
+  }
+
   @include vp-1023 {
+    margin-left: 0;
     margin-right: auto;
   }
 
