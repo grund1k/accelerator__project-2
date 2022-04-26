@@ -1606,6 +1606,7 @@ button,
 @media (max-width: 1260px) {
   .footer__logo {
     margin-left: 10px;
+    margin-right: 100px;
   }
 }
 
@@ -1618,12 +1619,6 @@ button,
 @media (max-width: 1098px) {
   .goods-list {
     gap: 40px;
-  }
-}
-
-@media (max-width: 1067px) {
-  .footer__logo {
-    margin-right: 100px;
   }
 }
 
