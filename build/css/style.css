@@ -1609,6 +1609,12 @@ button,
   }
 }
 
+@media (max-width: 1177px) {
+  .footer__contacts {
+    margin-right: 10px;
+  }
+}
+
 @media (max-width: 1098px) {
   .goods-list {
     gap: 40px;
@@ -1868,6 +1874,7 @@ button,
 
   .footer__contacts {
     margin-left: 15px;
+    margin-right: 0;
   }
 
   .nav {
